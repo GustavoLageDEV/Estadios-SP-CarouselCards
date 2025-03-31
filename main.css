@@ -1,0 +1,43 @@
+.navbar-nav .nav-link.active{
+    color: white;
+}
+
+.nav-link{
+    text-align: center;
+}
+
+section{
+    min-height: 50vh;
+    background-color: #ccc;
+    padding-top: 80px;
+}
+
+header {
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+}
+
+h2{
+    text-align: center;
+}
+
+.carousel-item.active img{
+    max-height: 75vh;
+}
+
+.card{
+    margin-top: 24px;
+}
+
+.card-header h3{
+    text-align: center;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo preto semi-transparente */
+    padding: 5px;
+    border-radius: 5px;
+}

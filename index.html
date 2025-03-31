@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto com BootStrap</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>BIG 4 ESTÁDIOS - SP</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav nav-pills navbar-nav">
+                        <li class="nav-item">
+                            <a class=" nav-link active" href="#carousel">Carousel</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#cards">Cards</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <section id="carousel">
+            <div class="container">
+                <h2 class="display-6">Carousel de Imagens</h2>
+                <div id="carousel-estadios" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div data-bs-interval="3000" class="carousel-item active">
+                            <img class="w-100" src="carousel-imgs/Morumbis-SPFC.jfif" alt="">
+                            <div class="carousel-caption">
+                                <h2 id="carousel-text">Morumbis - São Paulo</h2>
+                            </div>
+                        </div>
+                        <div data-bs-interval="3000" class="carousel-item">
+                            <img class="w-100" src="carousel-imgs/Alianz-Palmeiras.jfif" alt="">
+                            <div class="carousel-caption">
+                                <h2 id="carousel-text">Alianz Parque - Palmeiras</h2>
+                            </div>
+                        </div>
+                        <div data-bs-interval="3000" class="carousel-item">
+                            <img class="w-100" src="carousel-imgs/NeoQuimica-Corinthians.jfif" alt="">
+                            <div class="carousel-caption">
+                                <h2 id="carousel-text">Neo-Química Arena - Corinthians</h2>
+                            </div>
+                        </div>
+                        <div data-bs-interval="3000" class="carousel-item">
+                            <img class="w-100" src="carousel-imgs/VilaBelmiro-Santos.jfif" alt="">
+                            <div class="carousel-caption">
+                                <h2 id="carousel-text">Vila Belmiro - Santos</h2>
+                            </div>
+                        </div>
+                        <button data-bs-target="#carousel-estadios" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button data-bs-target="#carousel-estadios" data-bs-slide="next" class="carousel-control-next" type="button">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                        <div class="carousel-indicators">
+                            <button class="active" data-bs-target="#carousel-estadios" data-bs-slide-to="0" type="button"></button>
+                            <button data-bs-target="#carousel-estadios" data-bs-slide-to="1" type="button"></button>
+                            <button data-bs-target="#carousel-estadios" data-bs-slide-to="2" type="button"></button>
+                            <button data-bs-target="#carousel-estadios" data-bs-slide-to="3" type="button"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="cards">
+            <div class="container">
+                <h2 class="display-6">Cards</h2>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="card text-bg-dark">
+                            <div class="card-header">
+                                <h3>Morumbis</h3>
+                            </div>
+                            <img src="cards-imgs/Sao Paulo Futebol Clube.jfif" alt="Escudo do São Paulo Futebol Clube">
+                            <div class="card-body">
+                                <h4 class="card-title">Clube: São Paulo F. C.</h4>
+                                <h5 class="card-subtitle">Capacidade: 66.795</h5>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, id. Tempore sed sit aperiam eligendi sequi similique, provident quia autem culpa non, voluptas quidem, incidunt necessitatibus rerum distinctio expedita! Ipsum.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card text-bg-dark">
+                            <div class="card-header">
+                                <h3>Alianz Parque</h3>
+                            </div>
+                            <img src="cards-imgs/Palmeiras.jfif" alt="Escudo do Palmeiras">
+                            <div class="card-body">
+                                <h4 class="card-title">Clube: Palmeiras</h4>
+                                <h5 class="card-subtitle">Capacidade: 43.713 </h5>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, id. Tempore sed sit aperiam eligendi sequi similique, provident quia autem culpa non, voluptas quidem, incidunt necessitatibus rerum distinctio expedita! Ipsum.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card text-bg-dark">
+                            <div class="card-header">
+                                <h3>Néo-Química Arena</h3>
+                            </div>
+                            <img src="cards-imgs/Corinthians.jpg" alt="Escudo do Corinthians">
+                            <div class="card-body">
+                                <h4 class="card-title">Clube: Corinthians</h4>
+                                <h5 class="card-subtitle">Capacidade: 49.205 </h5>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, id. Tempore sed sit aperiam eligendi sequi similique, provident quia autem culpa non, voluptas quidem, incidunt necessitatibus rerum distinctio expedita! Ipsum.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card text-bg-dark">
+                            <div class="card-header">
+                                <h3>Vila Belmiro</h3>
+                            </div>
+                            <img src="cards-imgs/Santos.jfif" alt="Escudo do Santos">
+                            <div class="card-body">
+                                <h4 class="card-title">Clube: Santos</h4>
+                                <h5 class="card-subtitle">Capacidade: 16.068 </h5>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, id. Tempore sed sit aperiam eligendi sequi similique, provident quia autem culpa non, voluptas quidem, incidunt necessitatibus rerum distinctio expedita! Ipsum.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>    
+    </div>
+    <script src="lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
